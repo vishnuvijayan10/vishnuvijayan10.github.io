@@ -373,7 +373,8 @@ a {
 }
 
 footer {
-  background: #154353;
+  background: -webkit-gradient(linear, right top, left top, from(#38d39f), to(#38a4d3));
+  background: linear-gradient(to left, #38d39f, #38a4d3);
   color: white;
   min-height: 10vh;
   padding: 0% 5%;
