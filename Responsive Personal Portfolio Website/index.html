@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Reponsive Personal Portfolio Website</title>
+  </head>
+
+  <body>
+    <!-- Header  -->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Marlon</a>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu-alt-left"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!-- Home  -->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi, <br />I'am <span class="home__title-color">Vishnu</span
+            ><br />Web Designer
+          </h1>
+          <a href="#" class="button">Contact</a>
+        </div>
+        <div class="home__social">
+          <a href="#" class="home__social-icons"><i class='bx bxl-behance' ></i></i></a>
+          <a href="#" class="home__social-icons"><i class='bx bxl-linkedin' ></i></a>
+          <a href="#" class="home__social-icons"><i class='bx bxl-github' ></i></a>
+        </div>
+        <div class="home__img">
+          <img src="./assets/img/profile_img.png" alt="Profile Image">
+        </div>
+      </section>
+      <!-- About  -->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="./assets/img/about_img.jpg" alt="About Image">
+          </div>
+          <div>
+            <h2 class="about__subtitle">I'am Vishnu</h2>
+            <p class="about__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat quis eum placeat ex mollitia autem facilis aperiam dolore repellendus officia!</p>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- scrollreveal js  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Main Js  -->
+    <script src="./main.js"></script>
+  </body>
+</html>
