@@ -243,9 +243,9 @@ img {
 
 .home__img {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 295px;
+  right: 10px;
+  bottom: 10px;
+  width: 250px;
 }
 
 .button {
@@ -290,5 +290,87 @@ img {
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+.skills__container {
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.skills__subtitle {
+  margin-bottom: var(--mb-2);
+}
+
+.skills__text {
+  margin-bottom: var(--mb-4);
+}
+
+.skills__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: 0.5rem 1rem;
+  margin-bottom: var(--mb-4);
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+          box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+}
+
+.skills__icon {
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: var(--first-color);
+}
+
+.skills__names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills__bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--first-color);
+  height: 0.25rem;
+  border-radius: 0.5rem;
+  z-index: var(--z-back);
+}
+
+.skills__html {
+  width: 90%;
+}
+
+.skills__sass {
+  width: 70%;
+}
+
+.skills__css {
+  width: 70%;
+}
+
+.skills__js {
+  width: 60%;
+}
+
+.skills__bootstrap {
+  width: 80%;
+}
+
+.skills__uiux {
+  width: 80%;
 }
 /*# sourceMappingURL=style.css.map */
