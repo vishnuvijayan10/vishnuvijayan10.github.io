@@ -1,192 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>Reponsive Personal Portfolio Website</title>
-  </head>
 
-  <body>
-    <!-- Header  -->
-    <header class="l-header">
-      <nav class="nav bd-grid">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <title>Reponsive Personal Portfolio Website</title>
+</head>
+
+<body>
+  <!-- Header  -->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav__logo">&#60; <span class="home__title-color">V</span> &#62;</a>
+      </div>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu-alt-left"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!-- Home  -->
+    <section class="home bd-grid" id="home">
+      <div class="home__data">
+        <h1 class="home__title">
+          Hi, I'am<br /> <span class="home__title-color">Vishnu Vijayan</span><br />Web Designer
+        </h1>
+        <a href="#" class="button">Contact</a>
+      </div>
+      <div class="home__social">
+        <a href="#" class="home__social-icons"><i class='bx bxl-behance'></i></i></a>
+        <a href="#" class="home__social-icons"><i class='bx bxl-linkedin'></i></a>
+        <a href="#" class="home__social-icons"><i class='bx bxl-github'></i></a>
+      </div>
+      <div class="home__img">
+        <img src="./assets/img/profile_img.png" alt="Profile Image">
+      </div>
+    </section>
+    <!-- About  -->
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
+      <div class="about__container bd-grid">
+        <div class="about__img">
+          <img src="./assets/img/about_img.jpg" alt="About Image">
+        </div>
         <div>
-          <a href="#" class="nav__logo">Marlon</a>
+          <h2 class="about__subtitle">I'am Vishnu</h2>
+          <p class="about__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat quis eum placeat ex
+            mollitia autem facilis aperiam dolore repellendus officia!</p>
         </div>
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-          </ul>
-        </div>
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu-alt-left"></i>
-        </div>
-      </nav>
-    </header>
+      </div>
+    </section>
+    <!-- Skills  -->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills__container bd-grid">
+        <div>
+          <h2 class="skills__subtitle">Profesional Skills</h2>
+          <p class="skills__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, inventore.</p>
 
-    <main class="l-main">
-      <!-- Home  -->
-      <section class="home bd-grid" id="home">
-        <div class="home__data">
-          <h1 class="home__title">
-            Hi, <br />I'am <span class="home__title-color">Vishnu</span
-            ><br />Web Designer
-          </h1>
-          <a href="#" class="button">Contact</a>
-        </div>
-        <div class="home__social">
-          <a href="#" class="home__social-icons"><i class='bx bxl-behance' ></i></i></a>
-          <a href="#" class="home__social-icons"><i class='bx bxl-linkedin' ></i></a>
-          <a href="#" class="home__social-icons"><i class='bx bxl-github' ></i></a>
-        </div>
-        <div class="home__img">
-          <img src="./assets/img/profile_img.png" alt="Profile Image">
-        </div>
-      </section>
-      <!-- About  -->
-      <section class="about section" id="about">
-        <h2 class="section-title">About</h2>
-        <div class="about__container bd-grid">
-          <div class="about__img">
-            <img src="./assets/img/about_img.jpg" alt="About Image">
-          </div>
-          <div>
-            <h2 class="about__subtitle">I'am Vishnu</h2>
-            <p class="about__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat quis eum placeat ex mollitia autem facilis aperiam dolore repellendus officia!</p>
-          </div>
-        </div>
-      </section>
-      <!-- Skills  -->
-      <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills__container bd-grid">
-          <div>
-            <h2 class="skills__subtitle">Profesional Skills</h2>
-            <p class="skills__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, inventore.</p>
-            
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class='bx bxl-html5 skills__icon' ></i>
-                <span class="skills__name">HTML5</span> 
-              </div>
-              <div >
-                <span class="skills__percentage">90%</span>
-              </div>
-              <div class="skills__bar skills__html"></div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-html5 skills__icon'></i>
+              <span class="skills__name">HTML5</span>
             </div>
-
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class='bx bxl-sass skills__icon' ></i>
-                <span class="skills__name">SASS</span> 
-              </div>
-              <div >
-                <span class="skills__percentage">70%</span>
-              </div>
-              <div class="skills__bar skills__sass"></div>
+            <div>
+              <span class="skills__percentage">90%</span>
             </div>
+            <div class="skills__bar skills__html"></div>
+          </div>
 
-            <div class="skills__data">
-              <div class="skills__names ">
-                <i class='bx bxl-css3 skills__icon' ></i>
-                <span class="skills__name">CSS</span> 
-              </div>
-              <div >
-                <span class="skills__percentage">70%</span>
-              </div>
-              <div class="skills__bar skills__css"></div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-sass skills__icon'></i>
+              <span class="skills__name">SASS</span>
             </div>
+            <div>
+              <span class="skills__percentage">70%</span>
+            </div>
+            <div class="skills__bar skills__sass"></div>
+          </div>
 
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class='bx bxl-javascript skills__icon' ></i>
-                <span class="skills__name">JAVASCRIPT</span> 
-              </div>
-              <div >
-                <span class="skills__percentage">60%</span>
-              </div>
-              <div class="skills__bar skills__js"></div>
+          <div class="skills__data">
+            <div class="skills__names ">
+              <i class='bx bxl-css3 skills__icon'></i>
+              <span class="skills__name">CSS</span>
             </div>
+            <div>
+              <span class="skills__percentage">70%</span>
+            </div>
+            <div class="skills__bar skills__css"></div>
+          </div>
 
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class='bx bxl-bootstrap skills__icon' ></i>
-                <span class="skills__name">BOOTSTRAP</span> 
-              </div>
-              <div >
-                <span class="skills__percentage">80%</span>
-              </div>
-              <div class="skills__bar skills__bootstrap"></div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-javascript skills__icon'></i>
+              <span class="skills__name">JAVASCRIPT</span>
             </div>
+            <div>
+              <span class="skills__percentage">60%</span>
+            </div>
+            <div class="skills__bar skills__js"></div>
+          </div>
 
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class='bx bxs-paint skills__icon' ></i>
-                <span class="skills__name">UI/UX</span> 
-              </div>
-              <div >
-                <span class="skills__percentage">80%</span>
-              </div>
-              <div class="skills__bar skills__uiux"></div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-bootstrap skills__icon'></i>
+              <span class="skills__name">BOOTSTRAP</span>
             </div>
+            <div>
+              <span class="skills__percentage">80%</span>
+            </div>
+            <div class="skills__bar skills__bootstrap"></div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxs-paint skills__icon'></i>
+              <span class="skills__name">GRAPHIC DESIGNING</span>
+            </div>
+            <div>
+              <span class="skills__percentage">60%</span>
+            </div>
+            <div class="skills__bar skills__graphic"></div>
           </div>
         </div>
-      </section>
-      <!-- Work  -->
-      <section class="work section" id="work">
-        <h2 class="section-title">Work</h2>
+        <div>              
+          <img src="assets/img/skills2.svg" alt="" class="skills__img">
+      </div>
+      </div>
+    </section>
+    <!-- Work  -->
+    <section class="work section" id="work">
+      <h2 class="section-title">Work</h2>
 
-        <div class="work__container bd-grid">
-          <div class="work__img">
-            <img src="./assets/img/work1.jpg" alt="work image">
-          </div>
-          <div class="work__img">
-            <img src="./assets/img/work2.jpg" alt="work image">
-          </div>
-          <div class="work__img">
-            <img src="./assets/img/work3.jpg" alt="work image">
-          </div>
-          <div class="work__img">
-            <img src="./assets/img/work4.jpg" alt="work image">
-          </div>
-          <div class="work__img">
-            <img src="./assets/img/work5.jpg" alt="work image">
-          </div>
-          <div class="work__img">
-            <img src="./assets/img/work6.jpg" alt="work image">
-          </div>
+      <div class="work__container bd-grid">
+        <div class="work__img">
+          <img src="./assets/img/work1.jpg" alt="work image">
         </div>
-      </section>
-
-      <!-- Contact  -->
-      <section class="contact section" id="contact">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact__container bd-grid">
-          <form action="" class="contact__form">
-            <input type="text" class="contact__input" placeholder="Name">
-            <input type="mail" class="contact__input" placeholder="Email">
-            <textarea name=""class="contact__input" id="" cols=" 0" rows="10"></textarea>
-
-            <input type="button" class="contact__button button" value="Submit" name="" id="">
-          </form>
+        <div class="work__img">
+          <img src="./assets/img/work2.jpg" alt="work image">
         </div>
-      </section>
+        <div class="work__img">
+          <img src="./assets/img/work3.jpg" alt="work image">
+        </div>
+        <div class="work__img">
+          <img src="./assets/img/work4.jpg" alt="work image">
+        </div>
+        <div class="work__img">
+          <img src="./assets/img/work5.jpg" alt="work image">
+        </div>
+        <div class="work__img">
+          <img src="./assets/img/work6.jpg" alt="work image">
+        </div>
+      </div>
+    </section>
 
-    </main>
+    <!-- Contact  -->
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact__container bd-grid">
+        <form action="" class="contact__form">
+          <input type="text" class="contact__input" placeholder="Name">
+          <input type="mail" class="contact__input" placeholder="Email">
+          <textarea name="" class="contact__input" id="" cols=" 0" rows="10"></textarea>
 
-    <!-- scrollreveal js  -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- Main Js  -->
-    <script src="./main.js"></script>
-  </body>
+          <input type="button" class="contact__button button" value="Submit" name="" id="">
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- Footer  -->
+  <Footer class="footer">
+    <p class="footer__title">Vishnu Vijayan</p>
+
+    <div class="footer__social">
+      <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+      <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+      <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+    </div>
+
+    <p>&copy; 2021 copyright all reserved</p>
+  </Footer>
+
+  <!-- scrollreveal js  -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Main Js  -->
+  <script src="./main.js"></script>
+</body>
+
 </html>
