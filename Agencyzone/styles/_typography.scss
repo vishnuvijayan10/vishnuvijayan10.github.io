@@ -1,0 +1,32 @@
+h1 {
+  font-weight: $font-bold;
+  @include respond-above(sm) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  @include respond-above(xl) {
+    font-size: 50px;
+    line-height: 70px;
+  }
+}
+
+h2 {
+  color: $primary-color;
+  font-weight: $font-bold;
+  font-size: 32px;
+  @include respond-above(xl) {
+    font-size: 40px;
+  }
+}
+h3 {
+  color: $primary-color;
+  font-weight: $font-medium;
+  font-size: 18px;
+  @include respond-above(xl) {
+    font-size: 20px;
+  }
+}
+
+p {
+  color: $text-color;
+}

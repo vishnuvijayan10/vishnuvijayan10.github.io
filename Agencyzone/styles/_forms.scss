@@ -1,0 +1,27 @@
+.global-form {
+  input {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #ede5d9;
+    background-color: #faf9f7;
+    border-radius: 5px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    @include respond-above(xl) {
+      height: 60px;
+    }
+  }
+  .primary-btn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    margin-top: 0;
+    line-height: 15px;
+    border: none;
+    &:focus,
+    &:active {
+      border: none;
+    }
+  }
+}

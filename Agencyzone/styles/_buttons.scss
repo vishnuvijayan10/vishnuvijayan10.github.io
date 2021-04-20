@@ -1,0 +1,48 @@
+.primary-btn {
+  background-color: $secondary-color;
+  color: white;
+  border-radius: 5px;
+  transition: background-color ease 0.2s;
+  padding: 5px 18px;
+  display: inline-block;
+
+  @include respond-above(sm) {
+    font-size: 14px;
+  }
+  @include respond-above(xl) {
+    font-size: 15px;
+    padding: 12px 30px;
+  }
+  &:hover {
+    color: white;
+    background-color: $secondary-color-hover;
+  }
+}
+.secondary-btn {
+  font-size: 14px;
+  color: $primary-color;
+  text-transform: capitalize;
+  position: relative;
+  @include respond-above(xl) {
+    font-size: 15px;
+  }
+  &::after {
+    content: "";
+    background: url("../images/icons/right-arrow.svg") no-repeat center center;
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    margin: auto;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transform: translateX(20px);
+    transition: transform ease 0.5s;
+  }
+  &:hover {
+    color: $secondary-color;
+    &::after {
+      transform: translateX(25px);
+    }
+  }
+}
