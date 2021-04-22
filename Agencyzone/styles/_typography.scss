@@ -1,4 +1,6 @@
 h1 {
+  font-size: 22px;
+
   font-weight: $font-bold;
   @include respond-above(sm) {
     font-size: 40px;

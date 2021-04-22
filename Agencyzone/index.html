@@ -16,12 +16,19 @@
     <!-- header section start  -->
     <header>
       <div class="uk-container">
-        <div class="uk-flex uk-flex-between uk-flex-center uk-flex-middle">
+        <div
+          class="uk-flex uk-flex-row uk-flex-between uk-flex-center uk-flex-middle"
+        >
           <div class="logo">
             <img src="./images/logo/Logo.png" alt="Logo" />
           </div>
           <div class="navbar">
-            <ul>
+            <div id="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            <ul class="navbar-nav">
               <li><a href="#">Home</a></li>
               <li><a href="#">Our Works</a></li>
               <li><a href="#">About Us</a></li>
@@ -268,10 +275,10 @@
     <!-- Latest project section "card layout" end  -->
 
     <!-- testimonial slider section start -->
-    <div class="testimonial-slider">
+    <!-- <div class="testimonial-slider">
       <div class="uk-container uk-container-small uk-position-relative">
         <div class="dots-pattern uk-position-absolute">
-          <img src="./images/testimonial/dots-pattern.svg" alt="pattern" />
+          <img src="./images/testimonial/dots-patterns.svg" alt="pattern" />
         </div>
         <div class="uk-slider-container-offset" uk-slider>
           <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
@@ -347,12 +354,13 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- testimonial slider section end -->
 
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit-icons.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

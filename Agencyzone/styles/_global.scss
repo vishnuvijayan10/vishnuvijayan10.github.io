@@ -3,6 +3,9 @@ html {
   font-weight: $font-normal;
   font-size: 14px;
   line-height: 26px;
+  // @include respond-above(sm) {
+  //   font-size: 14px;
+  // }
   @include respond-above(xl) {
     font-size: 15px;
   }
@@ -23,6 +26,9 @@ li {
 .uk-flex {
   flex-direction: column;
   @include respond-above(sm) {
+    flex-direction: row;
+  }
+  &.uk-flex-row {
     flex-direction: row;
   }
 }

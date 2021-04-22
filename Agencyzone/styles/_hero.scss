@@ -1,5 +1,8 @@
 :root {
   --hero-height: 85vh;
+  @include respond-below(sm) {
+    --hero-height: 100vh;
+  }
 }
 .hero {
   background: $bg-linear-gradient;
@@ -23,6 +26,9 @@
     height: var(--hero-height);
     display: flex;
     align-items: center;
+    @include respond-below(sm) {
+      margin-top: 35px;
+    }
   }
   .hero-text {
     // padding: 40px 0;
@@ -46,6 +52,8 @@
   }
   .hero-img {
     img {
+      max-width: 250px;
+
       @include respond-above(sm) {
         max-width: 400px;
       }
