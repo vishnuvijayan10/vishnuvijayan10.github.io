@@ -37,15 +37,16 @@ li {
 }
 
 @include respond-above(sm) {
-  .uk-container {
+  .uk-container-small {
     max-width: 1000px;
   }
 }
 @include respond-above(xl) {
-  .uk-container {
+  .uk-container-small {
     max-width: 1200px;
   }
 }
+
 .uk-card-title {
   font-size: 18px;
   @include respond-above(xl) {

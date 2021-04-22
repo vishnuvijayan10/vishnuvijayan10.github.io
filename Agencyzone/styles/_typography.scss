@@ -26,6 +26,13 @@ h3 {
     font-size: 20px;
   }
 }
+h5 {
+  color: $primary-color;
+  font-size: 14px;
+  @include respond-above(xl) {
+    font-size: 15pz;
+  }
+}
 
 p {
   color: $text-color;

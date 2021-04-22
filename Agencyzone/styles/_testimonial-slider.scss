@@ -1,0 +1,104 @@
+.testimonial-slider {
+  margin: 50px 0;
+
+  @include respond-above(sm) {
+    margin: 100px 0;
+  }
+  @include respond-above(xl) {
+    margin: 120px 0;
+  }
+  .uk-card-body {
+    @include respond-below(sm) {
+      padding: 20px 20px;
+    }
+    @include respond-above(sm) {
+      padding: 0 0;
+    }
+  }
+  &:hover {
+    cursor: grabbing;
+  }
+  &-img {
+    flex: 1.5;
+    max-width: 473px;
+  }
+  &-info {
+    user-select: none;
+    flex: 2;
+    @include respond-above(sm) {
+      margin-left: 30px;
+      margin-top: -50px;
+    }
+    @include respond-above(xl) {
+      margin-top: -60px;
+    }
+
+    h3 {
+      margin: 0px 0px 12px;
+    }
+    h5 {
+      margin: 0px 0px 20px;
+
+      @include respond-above(xl) {
+        margin: 0px 0px 30px;
+      }
+    }
+
+    // p {
+    //   height: 80px;
+    //   overflow: hidden;
+    // }
+  }
+  .uk-position-center-left {
+    left: 0;
+    @include respond-above(sm) {
+      left: 43%;
+    }
+
+    @include respond-above(xl) {
+      left: 41%;
+    }
+  }
+  .uk-position-center-right {
+    right: 0;
+    @include respond-above(sm) {
+      right: 44%;
+    }
+  }
+  .uk-icon:not(.uk-preserve) [stroke*="#"]:not(.uk-preserve) {
+    stroke-width: 3px;
+    color: $secondary-color;
+  }
+  .uk-icon {
+    top: 24%;
+    width: 37px;
+    height: 37px;
+    border: 3px solid $border-color;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color ease 0.3s;
+    @include respond-above(sm) {
+      top: 85%;
+    }
+
+    @include respond-above(xl) {
+      width: 55px;
+      height: 55px;
+      top: 83%;
+    }
+
+    svg {
+      width: 7px;
+    }
+    &:hover {
+      background-color: $border-color;
+    }
+  }
+  .dots-pattern {
+    top: -20px;
+    left: -22px;
+  }
+}

@@ -39,7 +39,7 @@
 
     <!-- Hero section start  -->
     <div class="hero">
-      <div class="uk-container">
+      <div class="uk-container uk-container-small">
         <div class="uk-inner">
           <div class="uk-flex uk-flex-middle">
             <div class="hero-text">
@@ -63,7 +63,7 @@
 
     <!-- Services Section  start-->
     <div class="services-section">
-      <div class="uk-container">
+      <div class="uk-container uk-container-small">
         <div class="uk-text-center section-title">
           <h2>Our Services</h2>
           <p>
@@ -130,7 +130,7 @@
 
     <!-- image info section 1 start  -->
     <div class="img-info-section has-bg">
-      <div class="uk-container">
+      <div class="uk-container uk-container-small">
         <div
           class="uk-grid-column-large uk-flex-middle uk-flex-row-reverse uk-grid-row-small uk-child-width-1-2@s uk-text-left"
           uk-grid
@@ -163,7 +163,7 @@
 
     <!-- image info section 2 start  -->
     <div class="img-info-section">
-      <div class="uk-container">
+      <div class="uk-container uk-container-small">
         <div
           class="uk-grid-column-large uk-flex-middle uk-grid-row-small uk-child-width-1-2@s uk-text-left"
           uk-grid
@@ -208,9 +208,9 @@
     </div>
     <!-- image info section 2 end  -->
 
-    <!-- Latest project section start  -->
+    <!-- Latest project section "card layout" start  -->
     <div class="card-layout">
-      <div class="uk-container">
+      <div class="uk-container uk-container-large">
         <div class="uk-text-center section-title">
           <h2>Our Latest Project</h2>
           <p>
@@ -265,13 +265,91 @@
         </div>
       </div>
     </div>
-    <!-- Latest project section end  -->
+    <!-- Latest project section "card layout" end  -->
 
     <!-- testimonial slider section start -->
     <div class="testimonial-slider">
-      <div class="uk-container"></div>
+      <div class="uk-container uk-container-small uk-position-relative">
+        <div class="dots-pattern uk-position-absolute">
+          <img src="./images/testimonial/dots-pattern.svg" alt="pattern" />
+        </div>
+        <div class="uk-slider-container-offset" uk-slider>
+          <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+            <ul class="uk-slider-items uk-child-width-1-1@s uk-grid">
+              <li>
+                <div class="uk-card uk-flex uk-flex-middle">
+                  <div
+                    class="uk-card-media-top uk-width-1-3@m testimonial-slider-img"
+                  >
+                    <img
+                      src="./images/testimonial/testimonial-img-1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="uk-card-body uk-width-2-3@m testimonial-slider-info"
+                  >
+                    <h3>Carla stevens</h3>
+                    <h5>Technical Director at MotiveZone</h5>
+                    <p>
+                      “On the other hand, we denounce with righteous indignation
+                      and dislike men who are so beguiled and demoralized by the
+                      charms of pleasure of the moment, so blinded by desire,
+                      that they cannot foresee the pain and trouble that are
+                      bound to ensue; and equal blame belongs to those who fail
+                      in their duty through weakness of will, which is the same
+                      as saying.”
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="uk-card uk-flex uk-flex-middle">
+                  <div
+                    class="uk-card-media-top uk-width-1-3@m testimonial-slider-img"
+                  >
+                    <img
+                      src="./images/testimonial/testimonial-img-1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="uk-card-body uk-width-2-3@m testimonial-slider-info"
+                  >
+                    <h3>Carla stevens</h3>
+                    <h5>Technical Director at MotiveZone</h5>
+                    <p>
+                      “On the other hand, we denounce with righteous indignation
+                      and dislike men who are so beguiled and demoralized by the
+                      charms of pleasure of the moment, so blinded by desire,
+                      that they cannot foresee the pain and trouble that are
+                      bound to ensue; and equal blame belongs to those who fail
+                      in their duty through weakness of will, which is the same
+                      as saying.”
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a
+              class="uk-position-center-left uk-position-small"
+              href="#"
+              uk-slidenav-previous
+              uk-slider-item="previous"
+            ></a>
+            <a
+              class="uk-position-center-right uk-position-small"
+              href="#"
+              uk-slidenav-next
+              uk-slider-item="next"
+            ></a>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- testimonial slider section end -->
+
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit.min.js"></script>
