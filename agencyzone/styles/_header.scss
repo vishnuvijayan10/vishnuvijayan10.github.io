@@ -1,0 +1,150 @@
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100;
+
+  @include respond-below(sm) {
+    position: fixed;
+    height: 10vh;
+
+    background-color: $bg-primary;
+  }
+
+  .uk-flex {
+    @include respond-below(sm) {
+      height: 10vh;
+    }
+    @include respond-above(sm) {
+      height: 70px;
+    }
+    @include respond-above(xl) {
+      height: 105px;
+    }
+  }
+
+  .logo {
+    @include respond-above(sm) {
+      max-width: 170px;
+    }
+    @include respond-above(xl) {
+      max-width: 240px;
+    }
+    @include respond-below(sm) {
+      max-width: 140px;
+    }
+  }
+
+  .navbar {
+    ul {
+      @include respond-above(sm) {
+        display: flex;
+      }
+      li {
+        margin: 0 20px;
+        &:hover {
+          a {
+            color: $secondary-color;
+          }
+        }
+        a {
+          transition: color ease 0.3s;
+          color: white;
+          @include respond-above(sm) {
+            font-size: 14px;
+          }
+          @include respond-above(xl) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile Menu - Hamburger Menu
+
+@include respond-below(sm) {
+  .button {
+    // order: 2;
+    display: none;
+  }
+  .navbar {
+    // order: 3;
+    .navbar-nav {
+      width: 100%;
+      height: 100vh;
+      background: $primary-color;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+      justify-content: center;
+      top: 0;
+      left: 0;
+      text-align: center;
+      z-index: 999;
+      transform: translateX(-100%);
+      transition: transform ease 0.5s;
+      &.active {
+        transform: translateX(0%);
+      }
+      li {
+        margin: 20px 0;
+        a {
+          font-size: 22px;
+          color: white;
+          display: block;
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+  #hamburger {
+    position: relative;
+    z-index: 1000;
+
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+
+    cursor: pointer;
+
+    width: 40px;
+
+    margin: auto;
+  }
+
+  .bar {
+    display: block;
+
+    width: 60%;
+    height: 3px;
+    margin-top: 10%;
+    border-radius: 5px;
+
+    background: white;
+
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .animate .bar:nth-child(1) {
+    transform: translateY(10px) rotate(135deg);
+  }
+
+  .animate .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .animate .bar:nth-child(3) {
+    transform: translateY(-4px) rotate(-135deg);
+  }
+}

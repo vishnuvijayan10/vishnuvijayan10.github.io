@@ -1,0 +1,65 @@
+:root {
+  --hero-height: 85vh;
+  @include respond-below(sm) {
+    --hero-height: 100vh;
+  }
+}
+.hero {
+  background: $bg-linear-gradient;
+  height: var(--hero-height);
+  overflow: hidden;
+  perspective: 100px;
+  transform-style: preserve-3d;
+  &::after {
+    content: "";
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: -80px;
+    right: -5%;
+    left: -5%;
+    z-index: 11;
+    transform: rotateZ(358deg);
+    transform-origin: left center;
+  }
+  .uk-inner {
+    height: var(--hero-height);
+    display: flex;
+    align-items: center;
+    @include respond-below(sm) {
+      margin-top: 35px;
+    }
+  }
+  .hero-text {
+    // padding: 40px 0;
+    p {
+      margin-bottom: 35px;
+    }
+    @include respond-above(sm) {
+      max-width: 500px;
+      margin-right: 100px;
+    }
+    @include respond-above(xl) {
+      max-width: 699px;
+      margin-right: 144px;
+      p {
+        margin-bottom: 45px;
+      }
+    }
+    * {
+      color: white;
+    }
+  }
+  .hero-img {
+    img {
+      max-width: 250px;
+
+      @include respond-above(sm) {
+        max-width: 400px;
+      }
+      @include respond-above(xl) {
+        max-width: 515px;
+      }
+    }
+  }
+}

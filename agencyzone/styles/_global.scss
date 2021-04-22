@@ -1,0 +1,61 @@
+html {
+  font-family: $primary-font;
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 26px;
+  // @include respond-above(sm) {
+  //   font-size: 14px;
+  // }
+  @include respond-above(xl) {
+    font-size: 15px;
+  }
+}
+a,
+a:hover {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+.uk-flex {
+  flex-direction: column;
+  @include respond-above(sm) {
+    flex-direction: row;
+  }
+  &.uk-flex-row {
+    flex-direction: row;
+  }
+}
+
+.section-title {
+  max-width: 650px;
+  margin: 0 auto 50px;
+  @include respond-above(xl) {
+    max-width: 735px;
+    margin: 0 auto 60px;
+  }
+}
+
+@include respond-above(sm) {
+  .uk-container-small {
+    max-width: 1000px;
+  }
+}
+@include respond-above(xl) {
+  .uk-container-small {
+    max-width: 1200px;
+  }
+}
+
+.uk-card-title {
+  font-size: 18px;
+  @include respond-above(xl) {
+    font-size: 20px;
+  }
+}
