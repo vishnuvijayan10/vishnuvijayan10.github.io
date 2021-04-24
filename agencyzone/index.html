@@ -28,12 +28,15 @@
               <span class="bar"></span>
               <span class="bar"></span>
             </div>
-            <ul class="navbar-nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Our Works</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Review</a></li>
-              <li><a href="#">Contact Us</a></li>
+            <ul
+              class="navbar-nav"
+              uk-scrollspy-nav="closest: a;cls:uk-active; scroll: true; offset:100"
+            >
+              <li><a href="#home">Home</a></li>
+              <li><a href="#works">Our Works</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#review">Review</a></li>
+              <li><a href="#contactus">Contact Us</a></li>
             </ul>
           </div>
           <div class="button">
@@ -45,7 +48,7 @@
     <!-- header section end  -->
 
     <!-- Hero section start  -->
-    <div class="hero">
+    <div class="hero" id="home">
       <div class="uk-container uk-container-small">
         <div class="uk-inner">
           <div class="uk-flex uk-flex-middle">
@@ -69,7 +72,7 @@
     <!-- Hero section end  -->
 
     <!-- Services Section  start-->
-    <div class="services-section">
+    <div class="services-section" id="about">
       <div class="uk-container uk-container-small">
         <div class="uk-text-center section-title">
           <h2>Our Services</h2>
@@ -136,7 +139,7 @@
     <!-- Services Section  end-->
 
     <!-- image info section 1 start  -->
-    <div class="img-info-section has-bg">
+    <div class="img-info-section has-bg" id="">
       <div class="uk-container uk-container-small">
         <div
           class="uk-grid-column-large uk-flex-middle uk-flex-row-reverse uk-grid-row-small uk-child-width-1-2@s uk-text-left"
@@ -216,7 +219,7 @@
     <!-- image info section 2 end  -->
 
     <!-- Latest project section "card layout" start  -->
-    <div class="card-layout">
+    <div class="card-layout" id="works">
       <div class="uk-container uk-container-large">
         <div class="uk-text-center section-title">
           <h2>Our Latest Project</h2>
@@ -275,7 +278,7 @@
     <!-- Latest project section "card layout" end  -->
 
     <!-- testimonial slider section start -->
-    <div class="testimonial-slider">
+    <div class="testimonial-slider" id="review">
       <div class="uk-container uk-container-small uk-position-relative">
         <div class="dots-pattern uk-position-absolute">
           <img src="./images/testimonial/dots-patterns.svg" alt="pattern" />
@@ -360,23 +363,10 @@
     <!-- Company section start  -->
     <div class="company-section">
       <div class="uk-container uk-container-small">
-        <!-- <ul class="uk-flex uk-flex-center uk-text-center">
-          <li class="uk-card uk-card-default uk-card-body">
-            <img src="./images/company/booking.png" alt="" />
-          </li>
-          <li class="uk-card uk-card-default uk-card-body uk-margin-left">
-            <img src="./images/company/instacart.png" alt="" />
-          </li>
-          <li class="uk-card uk-card-default uk-card-body uk-margin-left">
-            <img src="./images/company/paypal.png" alt="" />
-          </li>
-          <li class="uk-card uk-card-default uk-card-body">
-            <img src="./images/company/google.png" alt="" />
-          </li>
-        </ul> -->
         <div
-          class="uk-child-width-1-4@m uk-grid-collapse uk-text-center"
+          class="uk-child-width-1-4@m uk-flex-middle uk-text-center"
           uk-grid
+          uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 100; repeat:true;"
         >
           <div>
             <div class="uk-tile uk-tile-default">
@@ -404,7 +394,101 @@
 
     <!-- Company section end  -->
 
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <!-- Footer start -->
+    <footer>
+      <div class="uk-container uk-container-small" id="contactus">
+        <div class="uk-grid-large uk-child-width-expand@s uk-text-left" uk-grid>
+          <div class="uk-width-auto@m">
+            <div class="uk-card">
+              <img src="./images/logo/Logo.png" alt="logo" />
+              <h5>
+                On the other hand, we denounce with righteous indignation and
+                dislike men.
+              </h5>
+              <h3>Interested To Work With Us</h3>
+              <form>
+                <div class="global-form">
+                  <div class="uk-margin uk-position-relative">
+                    <input
+                      type="text"
+                      placeholder="Enter your email address"
+                      required=""
+                    />
+                    <button class="primary-btn">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="uk-width-expand@m">
+            <div class="uk-card">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Protfolio</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Reviews</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="uk-width-expand@m">
+            <div class="uk-card">
+              <h3>Support</h3>
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Tram of use</a></li>
+                <li><a href="#">Buy & Sell</a></li>
+                <li><a href="#">Reviews</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="uk-width-auto@m">
+            <div class="uk-card">
+              <h3>Contact</h3>
+              <p>Madani Ave, usa 1212</p>
+              <p>+8802-55662000</p>
+              <p>Email: www.uixzone12.com</p>
+              <ul>
+                <li><a href="#">Buy & Sell</a></li>
+                <li><a href="#">Reviews</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="uk-grid-large uk-child-width-expand@s uk-text-left uk-flex-between"
+          uk-grid
+        >
+          <div class="footer-bottom-info uk-flex uk-flex-between">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Security</a>
+          </div>
+          <div class="footer-bottom-social uk-flex uk-flex-center">
+            <a
+              href=""
+              class="uk-icon-button uk-margin-small-right"
+              uk-icon="twitter"
+            ></a>
+            <a
+              href=""
+              class="uk-icon-button uk-margin-small-right"
+              uk-icon="facebook"
+            ></a>
+            <a href="" class="uk-icon-button" uk-icon="youtube"></a>
+          </div>
+          <div class="footer-bottom-copyright uk-text-right">
+            <p>© 2020 <span>MotiveZone</span> All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer end -->
+
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit-icons.min.js"></script>

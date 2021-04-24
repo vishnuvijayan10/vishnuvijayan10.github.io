@@ -1,2 +1,14 @@
 .company-section {
+  margin-bottom: 50px;
+  @include respond-above(sm) {
+    margin-bottom: 100px;
+  }
+  .uk-tile {
+    padding: 0;
+  }
+  img {
+    @include respond-below(sm) {
+      max-width: 140px;
+    }
+  }
 }

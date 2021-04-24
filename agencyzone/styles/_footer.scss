@@ -1,0 +1,77 @@
+footer {
+  padding-top: 60px;
+
+  @include respond-above(sm) {
+    padding-top: 80px;
+  }
+  padding-bottom: 38px;
+  background-color: $footer-bg;
+  h5,
+  h3 {
+    color: white;
+  }
+  h3 {
+    font-weight: $font-bold;
+  }
+  .uk-card {
+    h5 {
+      color: $footer-font-color;
+    }
+    p,
+    li > a {
+      color: $footer-font-color;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  .footer-bottom-info {
+    a {
+      color: $footer-font-color;
+    }
+    @include respond-below(sm) {
+      flex-direction: row;
+    }
+  }
+  .footer-bottom-social {
+    .uk-icon-button {
+      width: 38px;
+      height: 38px;
+    }
+    a {
+      display: inline-flex;
+      color: white;
+    }
+    @include respond-below(sm) {
+      flex-direction: row;
+    }
+    a:nth-child(1) {
+      background-color: #3a5897;
+    }
+    a:nth-child(2) {
+      background-color: #1da0f1;
+    }
+    a:nth-child(3) {
+      background-color: #c4302b;
+    }
+  }
+  .footer-bottom-copyright {
+    p {
+      color: $footer-font-color;
+      @include respond-below(sm) {
+        text-align: center;
+      }
+    }
+    span {
+      color: $secondary-color;
+    }
+    @include respond-below(sm) {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
+  }
+  .uk-grid-large > * {
+    padding-left: 40px;
+  }
+}

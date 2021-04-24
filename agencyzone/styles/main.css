@@ -157,7 +157,7 @@ h5 {
 
 @media (min-width: 1600px) {
   h5 {
-    font-size: 15pz;
+    font-size: 15px;
   }
 }
 
@@ -898,5 +898,138 @@ header .navbar ul li a {
 .testimonial-slider .dots-pattern {
   top: -20px;
   left: -22px;
+}
+
+.company-section {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 640px) {
+  .company-section {
+    margin-bottom: 100px;
+  }
+}
+
+.company-section .uk-tile {
+  padding: 0;
+}
+
+@media (max-width: 639px) {
+  .company-section img {
+    max-width: 140px;
+  }
+}
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 38px;
+  background-color: #011021;
+}
+
+@media (min-width: 640px) {
+  footer {
+    padding-top: 80px;
+  }
+}
+
+footer h5,
+footer h3 {
+  color: white;
+}
+
+footer h3 {
+  font-weight: bold;
+}
+
+footer .uk-card h5 {
+  color: #a9b2bc;
+}
+
+footer .uk-card p,
+footer .uk-card li > a {
+  color: #a9b2bc;
+}
+
+footer .uk-card p {
+  margin: 0;
+}
+
+footer .footer-bottom-info a {
+  color: #a9b2bc;
+}
+
+@media (max-width: 639px) {
+  footer .footer-bottom-info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+footer .footer-bottom-social .uk-icon-button {
+  width: 38px;
+  height: 38px;
+}
+
+footer .footer-bottom-social a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: white;
+}
+
+@media (max-width: 639px) {
+  footer .footer-bottom-social {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+footer .footer-bottom-social a:nth-child(1) {
+  background-color: #3a5897;
+}
+
+footer .footer-bottom-social a:nth-child(2) {
+  background-color: #1da0f1;
+}
+
+footer .footer-bottom-social a:nth-child(3) {
+  background-color: #c4302b;
+}
+
+footer .footer-bottom-copyright p {
+  color: #a9b2bc;
+}
+
+@media (max-width: 639px) {
+  footer .footer-bottom-copyright p {
+    text-align: center;
+  }
+}
+
+footer .footer-bottom-copyright span {
+  color: #ff9c00;
+}
+
+@media (max-width: 639px) {
+  footer .footer-bottom-copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+footer .uk-grid-large > * {
+  padding-left: 40px;
 }
 /*# sourceMappingURL=main.css.map */
