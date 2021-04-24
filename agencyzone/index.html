@@ -51,7 +51,11 @@
     <div class="hero" id="home">
       <div class="uk-container uk-container-small">
         <div class="uk-inner">
-          <div class="uk-flex uk-flex-middle">
+          <div
+            class="uk-flex uk-flex-middle"
+            uk-grid,
+            uk-scrollspy="cls: uk-animation-fade; target:div;  delay: 450; repeat: true"
+          >
             <div class="hero-text">
               <h1>We Build Brands That Lead & Inspire</h1>
               <p>
@@ -74,7 +78,10 @@
     <!-- Services Section  start-->
     <div class="services-section" id="about">
       <div class="uk-container uk-container-small">
-        <div class="uk-text-center section-title">
+        <div
+          class="uk-text-center section-title"
+          uk-scrollspy="cls: uk-animation-slide-bottom; target: *; delay: 200; repeat: true"
+        >
           <h2>Our Services</h2>
           <p>
             That are bound to ensue; and equal blame belongs to those who fail
@@ -87,7 +94,10 @@
           uk-grid
         >
           <div>
-            <div class="icon-info">
+            <div
+              class="icon-info"
+              uk-scrollspy="cls: uk-animation-slide-bottom; target: *; delay: 200; repeat: true"
+            >
               <div class="icon uk-flex uk-flex-center uk-flex-middle">
                 <img src="./images/icons/ux-design.svg" alt="icons" />
               </div>
@@ -103,7 +113,10 @@
           </div>
 
           <div>
-            <div class="icon-info">
+            <div
+              class="icon-info"
+              uk-scrollspy="cls: uk-animation-slide-bottom; target: *; delay: 200; repeat: true"
+            >
               <div class="icon uk-flex uk-flex-center uk-flex-middle">
                 <img src="./images/icons/vector.svg" alt="icons" />
               </div>
@@ -119,7 +132,10 @@
           </div>
 
           <div>
-            <div class="icon-info">
+            <div
+              class="icon-info"
+              uk-scrollspy="cls: uk-animation-slide-bottom; target: *; delay: 200; repeat: true"
+            >
               <div class="icon uk-flex uk-flex-center uk-flex-middle">
                 <img src="./images/icons/graphic-design.svg" alt="icons" />
               </div>
@@ -146,12 +162,22 @@
           uk-grid
         >
           <div>
-            <div class="img">
-              <img src="./images/img-info-1.jpg" alt="illustration" />
+            <div
+              class="img"
+              uk-scrollspy=" target: *; delay: 400; repeat: true"
+            >
+              <img
+                src="./images/img-info-1.jpg"
+                alt="illustration"
+                uk-scrollspy-class="uk-animation-slide-left"
+              />
             </div>
           </div>
           <div>
-            <div class="info">
+            <div
+              class="info"
+              uk-scrollspy="cls: uk-animation-slide-bottom; target: *; delay: 400; repeat: true"
+            >
               <h2>We Are Hear To Help You With</h2>
               <p>
                 But I must explain to you how all this mistaken idea of
@@ -179,12 +205,22 @@
           uk-grid
         >
           <div>
-            <div class="img">
-              <img src="./images/img-info-2.jpg" alt="illustration" />
+            <div
+              class="img"
+              uk-scrollspy="cls: uk-animation-slide-bottom; target: *; delay: 400; repeat: true"
+            >
+              <img
+                src="./images/img-info-2.jpg"
+                alt="illustration"
+                uk-scrollspy-class="uk-animation-slide-right"
+              />
             </div>
           </div>
           <div>
-            <div class="info">
+            <div
+              class="info"
+              uk-scrollspy="cls: uk-animation-slide-bottom; target: *; delay: 400; repeat: true"
+            >
               <h2>Interested To Work With Us?</h2>
               <p>
                 Because it is pleasure, but because those who do not know how to
@@ -220,7 +256,10 @@
 
     <!-- Latest project section "card layout" start  -->
     <div class="card-layout" id="works">
-      <div class="uk-container uk-container-large">
+      <div
+        class="uk-container uk-container-large"
+        uk-scrollspy="cls: uk-animation-slide-bottom; target: *; delay: 100; repeat: false"
+      >
         <div class="uk-text-center section-title">
           <h2>Our Latest Project</h2>
           <p>
@@ -396,7 +435,11 @@
 
     <!-- Footer start -->
     <footer>
-      <div class="uk-container uk-container-small" id="contactus">
+      <div
+        class="uk-container uk-container-small"
+        id="contactus"
+        uk-scrollspy="cls: uk-animation-slide-bottom; target: *; delay: 50; repeat: true"
+      >
         <div class="uk-grid-large uk-child-width-expand@s uk-text-left" uk-grid>
           <div class="uk-width-auto@m">
             <div class="uk-card">
