@@ -1,0 +1,20 @@
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    width: 148px;
+    // height: 44px;
+    border-radius: 22px;
+    background: $inside-gradient;
+    box-shadow: $outside-shadow;
+    text-align: center;
+
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 25px;
+
+    text-decoration: none;
+    color: $secondary-color;
+  }
+}

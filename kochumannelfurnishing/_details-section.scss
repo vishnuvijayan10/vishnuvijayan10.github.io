@@ -1,0 +1,39 @@
+.details {
+  width: 315px;
+  height: 159px;
+  border-radius: 22px;
+  margin: 46px auto;
+
+  background: $inside-gradient;
+  box-shadow: $outside-shadow;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: 22px;
+  .details__icon {
+    width: 25px;
+    height: 25px;
+    background: $inside-gradient;
+    border-radius: 22px;
+    box-shadow: $outside-shadow;
+  }
+  & > div {
+    display: flex;
+    &:nth-child(2) {
+      margin: 10px 0;
+    }
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  h5 {
+    font-size: 14px;
+    font-weight: 500;
+    color: $secondary-color;
+    margin-left: 13px;
+  }
+}
