@@ -16,5 +16,9 @@
 
     text-decoration: none;
     color: $secondary-color;
+    &:hover,
+    &:focus {
+      box-shadow: $inside-shadow;
+    }
   }
 }
