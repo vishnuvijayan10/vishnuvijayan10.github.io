@@ -54,46 +54,10 @@ function scrollTop(){
 }
 window.addEventListener('scroll', scrollTop)
 
-/*===== MIXITUP FILTER PORTFOLIO =====*/ 
-var mixer = mixitup(".portfolio__container", {
-    selectors: {
-        target: '.portfolio__content'
-    },
-    animation: {
-        duration: 400
-    }
-});
+ 
 
-/* Link active portfolio */ 
-const linkPortfolio = document.querySelectorAll('.portfolio__item')
-
-function activePortfolio(){
-    if(linkPortfolio){
-        linkPortfolio.forEach(l=> l.classList.remove('active-portfolio'))
-        this.classList.add('active-portfolio')
-    }
-}
-linkPortfolio.forEach(l=> l.addEventListener('click', activePortfolio))
-
-/*===== SWIPER CAROUSEL =====*/ 
-const mySwiper = new Swiper('.testimonial__container', {
-    spaceBetween: 16,
-    loop: true,
-    grabCursor: true,
-    
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    breakpoints: {
-        640: {
-            slidesPerView: 2,
-        },
-        1024: {
-            slidesPerView: 3,
-        },
-    }
-})
+ 
+ 
 
 gsap.from('.home__img', {opacity: 0, duration: 2, delay: .5, x: 60})
 
