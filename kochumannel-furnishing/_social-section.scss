@@ -1,0 +1,33 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  .icon {
+    width: 59px;
+    height: 59px;
+    box-shadow: $outside-shadow;
+    // box-shadow: 0;
+    background: $inside-gradient;
+    border-radius: 22px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: $inside-shadow;
+      i {
+        transform: scale(0.9);
+      }
+    }
+  }
+  i {
+    font-size: 30px;
+    transition: transform 0.3s ease;
+    color: $secondary-color;
+  }
+}
