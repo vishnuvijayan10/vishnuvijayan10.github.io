@@ -1,0 +1,37 @@
+.details {
+  width: 100%;
+  height: 159px;
+  border-radius: 22px;
+  margin: 46px auto;
+
+  background: $inside-gradient;
+  box-shadow: $outside-shadow;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+
+  padding-left: 22px;
+  .details__icon {
+    width: 25px;
+    height: 25px;
+    background: $inside-gradient;
+    border-radius: 22px;
+    box-shadow: $outside-shadow;
+  }
+  & > div {
+    display: flex;
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  h5 {
+    font-size: 14px;
+    font-weight: 500;
+    color: $secondary-color;
+    margin-left: 13px;
+  }
+}
